@@ -1,0 +1,36 @@
+
+# Local secrets and environment files; keep safe templates.
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python build/cache and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Private datasets, generated runs and model artifacts
+/data/
+/runs/
+/checkpoints/*
+!/checkpoints/.gitkeep
+/models/original_model/
+/models/*_hf/
+wandb/
+logs/
+
+# Editor / operating system files
+.DS_Store
+
+# 上游框架源码，按官方文档安装，不入库
+/verl/upstream/
